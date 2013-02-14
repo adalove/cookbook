@@ -1,0 +1,37 @@
+  <div id="display">
+
+
+    <%= link_to(@book.title, @book) %>
+    <br>
+    <%= @book.cuisine %>
+    <br>
+    <%= @book.chef %>
+    <br>
+    <%= image_tag(@book.image) %>
+
+    <%= link_to 'Edit', edit_book_path(@book) %>
+
+
+    <br>
+
+  <% @book.recipes.each do |recipe| %>
+      <br>
+      <%= recipe.name %>
+      <br>
+      <%= image_tag(recipe.image) %>
+      <br>
+
+
+
+    <%= recipe.ingredients.each do |ingredient| %>
+      <br>
+      <%= ingredient.name %>
+      <br>
+      <%= image_tag(ingredient.image) %>
+      <br>
+    <% end %>
+  <% end %>
+
+
+
+</div>

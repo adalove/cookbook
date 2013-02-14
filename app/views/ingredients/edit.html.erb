@@ -1,0 +1,23 @@
+
+<div id="editingredient">
+<%= form_for @ingredient do |f| %>
+  <%= f.label :name, 'Ingredient name' %>
+  <%= f.text_field :name %>
+<br>
+  <%= f.label :measurement %>
+  <%= f.text_field :measurement %>
+<br>
+  <%= f.label :cost %>
+  <%= f.text_field :cost %>
+<br>
+  <%= f.label :image %>
+  <%= f.text_field :image %>
+  <% Ingredient.order(:name).each do |ingredient| %>
+    <span><%= ingredient.name %></span>
+    <%= check_box_tag 'recipe[ingredient_ids][]', ingredient.id, ingredient.in?(@ingredient.recipes.to_a) %>
+  <% end %>
+
+  <br>
+  <%= f.submit %>
+<% end %>
+</div>

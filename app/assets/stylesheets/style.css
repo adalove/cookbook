@@ -1,0 +1,117 @@
+body
+{
+  background: #96E1FE;
+}
+
+nav li
+{
+  list-style: none;
+  font-size: 30px;
+  float: left;
+  padding-left: 20px;
+  background-color: #375C8C;
+  width: 100%;
+
+}
+
+a
+{
+  text-decoration: none;
+  color: #FDFEE0;
+  font-style: strong;
+  font-family: 'Rufina', serif;
+}
+
+a:hover
+{
+color:#96E1FE;
+}
+
+#display
+{
+  background: #96E1FE;
+  color: #375C8C;
+  font-size: 26px;
+  text-align: center;
+  font-family: 'Rufina', serif;
+
+}
+
+#display a
+{
+  color: #375C8C;
+}
+
+
+img {
+    width:200px;
+    height: auto;
+}
+
+
+#books
+{
+  font-size: 26px;
+  margin: 0 auto;
+  font-family: 'Rufina', serif;
+  text-align: center;
+  background-color: #FDFEE0;
+  width: 960px;
+  border: 3px solid #375C8C;
+}
+
+#books a
+{
+  color: #375C8C;
+  font-weight: bold;
+}
+#books a:hover
+{
+  color: #96E1FE;
+}
+
+
+#recipes
+{
+  font-size: 26px;
+  margin: 0 auto;
+  font-family: 'Rufina', serif;
+  text-align: center;
+  background-color: #FDFEE0;
+  width: 960px;
+  border: 3px solid #375C8C;
+}
+
+#recipes a
+{
+  color: #375C8C;
+  font-weight: bold;
+}
+
+
+#ingredients
+{
+  font-size: 26px;
+  margin: 0 auto;
+  font-family: 'Rufina', serif;
+  text-align: center;
+  background-color: #FDFEE0;
+  width: 960px;
+  border: 3px solid #375C8C;
+}
+#ingredients a
+{
+  color: #375C8C;
+  font-weight: bold;
+}
+
+#addbook
+{
+  font-size: 26px;
+  font-family: 'Rufina', serif;
+}
+input
+{
+  font-size: 30px;
+}
+
